@@ -26,17 +26,22 @@ if($status == "1"){
 </body>
 
 <?php
-$db=$_POST['mysql_get'];//Database
+$udb=$_POST['mysql_get'];//Database
 $user=$_POST['user'];
 $pass=$_POST['pass'];
 $query=$_POST['myquery'];//Commands
 $host=$_POST['host'];
 
-$mysqli = mysqli_connect($host,$user,$pass,$db) or die("Unable to connect to MYSQL");
-mysqli_query($mysqli,"SELECT * FROM users;");
+
+
+
+$db = mysqli_connect($host,$user,$pass,$udb) or die("Error connection to MySQL failed");
+mysqli_query($db, $query) or die("Unable to access MYSQL");
+$result = mysqli_query($db, $query);
+$row = mysqli_fetch_array($result);
+$column=$row['password'];
+echo "<b>Query Result: $column</b><br>";
 $mysqli_close($db);
-
-
 
 $cwd=getcwd();
 echo "<br>Current directory: $cwd<br>";
