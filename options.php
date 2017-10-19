@@ -22,10 +22,6 @@ if($status == "1"){
 </body>
 
 <?php
-$db = $_POST['mysql_get'];
-$query = $_POST['myquery'];
-$execute = shell_exec("./mysql.sh $db $query");
-echo $execute;
 
 $cwd=getcwd();
 echo "Current directory: $cwd";
