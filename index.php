@@ -23,7 +23,15 @@ session_start();
 <?php
 $user_name = $_POST['UID'];
 $user_password = $_POST['passwd'];
-$db = mysqli_connect('localhost', 'wp_user','skstsnbd18','custom') or die("Error connecting to MYSQL");
+//Enter username for MySQL below
+$user="";
+//Enter password for Mysql username below
+$pass="";
+//Enter DataBase
+$database="";
+  
+  
+$db = mysqli_connect('localhost', '$user','$pass','$database') or die("Error connecting to MYSQL");
 $query = "SELECT password FROM users WHERE name = '$user_name'";
 mysqli_query($db, $query) or die("Unable to access MYSQL");
 $result = mysqli_query($db, $query);
