@@ -12,7 +12,7 @@ CREATE DATABASE database_name_goes_here;
 Then switch over to it by running:
 
 ```MySQL
-use database_name_goes_here;
+USE database_name_goes_here;
 ```
 
 To set the table up, create a MySQL table with the fields `name` and `password`, to do so run:
