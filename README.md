@@ -1,7 +1,7 @@
 # admin-panel
-This is a very sucky admin panel that is in pre-pre-pre-pre-pre-pre-pre-pre-alpha stages. So far it can run shell commands, and basic MySQL queries. It has a simple UI, and the passwords in the database are now hashed, as opposed to the plaintext they used to be.
+This is a brand new admin panel that is currently in alpha stages. As of now, the panel can run shell commands, basic MySQL queries, and simple PHP commands. This panel has a very simple UI, and the passwords in the database are hashed.
 
-## Set-Up
+## To Set-Up, follow steps below:
 
 First create a MySQL database by running:
 
