@@ -15,7 +15,7 @@ if($_SESSION['status']!="1"){
     <a href="logout.php">Logout</a>&ensp;
     <a href="options.php">Home</a><hr>
 
-    <form action="" name="query" id="query" method="post">
+    <form action="" name="query" id="query" method="post" >
     	SHELL: &nbsp;&nbsp;&ensp;&nbsp;&nbsp;<input type="text" id="query_box" name="query_box" placeholder="Ex: whoami"></input><br><br>   
     	<button type="Submit" value="Submit">Submit</button>
     </form>
