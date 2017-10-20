@@ -19,12 +19,12 @@ include "user.php";
 <body>
 <h1 style="text-align: center;">Admin Panel</h1>
 <a href="logout.php">Logout</a><hr>
-<p>You are currently running version <?php echo $version; ?></p>
 <p>Below you will find shortcuts to a number of settings meant to replace SSH</p>
 
 <a href="shell.php"><p class="server">EXECUTE SHELL</p></a>
 <a href="mysql_exec.php"><p class="server">EXECUTE MYSQL</p></a>
 <a href="php_exec.php"><p class="server">EXECUTE PHP</p></a>
+<p class="footer">Version: <?php echo $version; ?></p>
 </body>
 
 
