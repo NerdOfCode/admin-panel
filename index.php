@@ -46,11 +46,11 @@ mysqli_query($db, $query) or die("Unable to access MYSQL");
 $result = mysqli_query($db, $query);
 $row = mysqli_fetch_array($result);
 $password=$row['password'];
-if($user_password == $password && $user_name != ""){
+if(password_verify($_POST['passwd'], $password)){
         $_SESSION['status'] = "1";
         header("Location: /options.php");
         die();
-}else if($user_password != $password && $user_name != ""){
+}else{
         echo "An error has occured... Please try again later";
         $_SESSION['status'] = "0";
 }
