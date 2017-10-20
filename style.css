@@ -2,12 +2,14 @@ body {
 	background-color: #a89aff;;
 }
 
-#UID{
-	text-align: center;;
+
+#index{
+	width: 200px;
+	margin: auto;
+
 }
-#passwd{
-	text-align: center;
-}
+
+
 .server{
    font-weight: bold;
    display: inline-block; 
