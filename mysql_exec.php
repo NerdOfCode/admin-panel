@@ -16,7 +16,8 @@ if($status == "1"){
 </head>
 <body>
 <h1 style="text-align: center;">Admin Panel</h1>
-<a href="logout.php">Logout</a><hr>
+<a href="logout.php">Logout</a>&ensp;
+<a href="options.php">Home</a><hr>
 <p>Below is version v.000001 of admin panel by NerdOfCode</p>
 <p>You can execute shell commands seperately from Mysql commands</p>
 <form action="" name="query" id="query" method="post">

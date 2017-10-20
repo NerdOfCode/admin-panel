@@ -39,7 +39,7 @@ $(document).ready(function(){
 <?php
 include('user.php');
 $user_name = $_POST['UID'];
-$user_password = $_POST['passwd'];
+$user_pass = $_POST['passwd'];
 $db = mysqli_connect('localhost',$user,$pass,$database) or die("Error connecting to MYSQL");
 $query = "SELECT password FROM $table WHERE name = '$user_name'";
 mysqli_query($db, $query) or die("Unable to access MYSQL");
