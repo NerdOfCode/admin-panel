@@ -6,9 +6,6 @@ if($_SESSION['status']=="1"){
 	header("Location: /options.php");
 	$_SESSION['logged_in']="1";
 }
-
-
-
 ?>
 <html>
   <head>
@@ -21,7 +18,7 @@ if($_SESSION['status']=="1"){
     <form name="form" id="form" action="" method="post" >
       Username:&ensp;<input type="text" name="UID" id="UID" required><br><br>
       Password:&ensp;<input type="password" name="passwd" id="passwd" required><br><br>
-      <input type="submit" value="Submit" onClick="">
+      <input type="submit" value="Submit" onClick=""">
     </form>
     
 <script>
@@ -30,10 +27,9 @@ $(document).ready(function(){
 		$('#UID').fadeOut();
 		$('#passwd').fadeOut();
 })
-	
 });
 </script>
-    
+<p class="footer">By: <a href="https://github.com/NerdOfCode" target="_blank"><b>NerdOf</b>Code</a>, <a href="https://github.com/NerdOfLinux" target="_blank"><b>NerdOf</b>Linux</a></p>    
   </body>
   
 <?php
@@ -50,9 +46,8 @@ if(password_verify($_POST['passwd'], $password)){
         $_SESSION['status'] = "1";
         header("Location: /options.php");
         die();
-}else{
-        echo "An error has occured... Please try again later";
-        $_SESSION['status'] = "0";
+}else if(! $_SESSION['status']){
+	echo "<p class=\"false\">Please re-enter creds.</p>";
 }
 mysqli_close($db);
 

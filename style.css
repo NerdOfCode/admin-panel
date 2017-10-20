@@ -23,7 +23,11 @@ body {
   cursor: pointer;
   width: 150px; 
   background-color: #9f9595;
-
-
 }
-
+.footer{
+	position: absolute;
+	bottom:0;
+	left: 0;
+	right: 0;
+	text-align:center;
+}
