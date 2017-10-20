@@ -27,7 +27,7 @@ if (!empty($_POST['query_box'])) {
 	echo "<br><b>Output: </b><br>";
 	echo "<pre>$run</pre>";
 }else{
-	echo "Nothing has been run yet.";	
+	echo "<b>Nothing has been run yet.</b>";	
 }
 ?>  
 </body>
