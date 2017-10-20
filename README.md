@@ -5,7 +5,7 @@ This is a brand new admin panel that is currently in alpha stages. As of now, th
 
 First clone the repository into your web server's document root directory, then run:
 
-git clone git@github.com:NerdOfCode/admin-panel.git
+`git clone git@github.com:NerdOfCode/admin-panel.git`
 
 
 Then to set a user up, create a MySQL database by running:
