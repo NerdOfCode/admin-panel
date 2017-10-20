@@ -11,7 +11,7 @@ CREATE DATABASE database_name_goes_here;
 
 To set it up, create a MySQL table, with the fields `name` and `password`, to do so run:
 
-```shell
+```MySQL
 CREATE TABLE users(name VARCHAR(30) NOT NULL, password VARCHAR(50) NOT NULL);
 ```
 Then put your desired username in the `name` field, and the password in the `password` field.
