@@ -6,7 +6,7 @@ $database="custom";
 $table="users";
 
 //Dont edit below here
-$version=".00001 alpha";
+$version="<b>0.00001 alpha<b>";
 ?>
 
 
