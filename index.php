@@ -40,6 +40,7 @@ input.select();
 <?php
 include('user.php');
 $user_name = $_POST['UID'];
+$_SESSION['user']="$user_name";
 $user_password = $_POST['passwd'];
 $db = mysqli_connect('localhost',$user,$pass,$database) or die("Error connecting to MYSQL");
 $query = "SELECT password FROM $table WHERE name = '$user_name'";

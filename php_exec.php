@@ -28,6 +28,8 @@ if (!empty($_POST['query_box'])) {
 	//Run the shell command
 	$run = eval($shell);
 	echo "<pre>$run</pre>";
+	$_SESSION['run_seperate']="$shell";
+        include 'mysql.php';
 }else{
 	echo "<b>Nothing has been run yet.</b>";	
 }

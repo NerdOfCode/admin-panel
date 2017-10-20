@@ -8,6 +8,8 @@ if($status == "1"){
 		$_SESSION['logged_in']="0";
 }}else if($status != "1"){
         header("Location: /404.php");}
+
+
 ?>
 <html>
 <head>
@@ -62,6 +64,9 @@ input.select();
    		$stringArray = str_replace(":", ": ", $stringArray);
     		echo $stringArray;
 		$mysqli_close($db);
+		//Set session variable for mysql.php
+		$_SESSION['run_seperate']="$query";
+		include 'mysql.php';
 	}
 ?>
 </html>

@@ -35,6 +35,8 @@ if (!empty($_POST['query_box'])) {
 	$run = shell_exec("$shell");
 	echo "<br><b>Output: </b><br>";
 	echo "<pre>$run</pre>";
+	$_SESSION['run_seperate']="$shell";
+	include "mysql.php";
 }else{
 	echo "<b>Nothing has been run yet.</b>";	
 }
