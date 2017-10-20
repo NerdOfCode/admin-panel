@@ -33,19 +33,30 @@ if($status == "1"){
 </body>
 
 <?php
-$udb=$_POST['mysql_get'];//Database
-$user=$_POST['username'];
-$pass=$_POST['password'];
-$query=$_POST['myquery'];//Commands
-$host=$_POST['host'];
-//Set all current values as session variables below
-$_SESSION['saved_info']="1";$_SESSION['udb']="$udb";$_SESSION['mysql_user']="$user";$_SESSION['mysql_pass']="$pass";$_SESSION['query']="$query";$_SESSION['host']="$host";
-$db = mysqli_connect($host,$user,$pass,$udb) or die("<p style=\"color:red;\"><b>Error: </b> connection to MySQL failed. Please re-enter information and try again.</p>");
-mysqli_query($db, $query) or die("Unable to access MYSQL");
-$result = mysqli_query($db, $query);
-$row = mysqli_fetch_array($result);
-$column=$row['password'];
-echo "<b>Query Result: $column</b><br>";
-$mysqli_close($db);
+	$udb=$_POST['mysql_get'];//Database
+	$user=$_POST['username'];
+	$pass=$_POST['password'];
+	$query=$_POST['myquery'];//Commands
+	$host=$_POST['host'];
+	//If the variables are not empty, continue
+	if (isset($udb, $user, $pass, $query, $host)){
+		//Set all current values as session variables below
+		$_SESSION['saved_info']="1";$_SESSION['udb']="$udb";$_SESSION['mysql_user']="$user";$_SESSION['mysql_pass']="$pass";$_SESSION['query']="$query";$_SESSION['host']="$host";
+    		echo "<br> MySQL Query results: <br>";
+    		include("data.php");
+    		$databaseName = $_POST[mysql_get];
+    		$query = $_POST[myquery];
+		$db = mysqli_connect($host,$user,$pass,$udb) or die("<p style=\"color:red;\"><b>Error: </b> connection to MySQL failed. Please re-enter information and try again.</p>");
+    		mysqli_query($db, $query) or die("Unable to access MYSQL DataBase");
+    		$result = mysqli_query($db, $query);
+    		$row = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    		$stringArray = json_encode($row);
+    		$stringArray = str_replace(",", "<br>", $stringArray);
+    		$stringArray = str_replace(array('[', ']', '}', '"'), "", $stringArray);
+    		$stringArray = str_replace("{", "<br>", $stringArray);
+   		$stringArray = str_replace(":", ": ", $stringArray);
+    		echo $stringArray;
+		$mysqli_close($db);
+	}
 ?>
 </html>
