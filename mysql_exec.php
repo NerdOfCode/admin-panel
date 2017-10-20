@@ -39,7 +39,7 @@ if($status == "1"){
 	$query=$_POST['myquery'];//Commands
 	$host=$_POST['host'];
 	//If the variables are not empty, continue
-	if (!empty($udb, $user, $pass, $query, $host)){
+	if (isset($udb, $user, $pass, $query, $host)){
 		//Set all current values as session variables below
 		$_SESSION['saved_info']="1";$_SESSION['udb']="$udb";$_SESSION['mysql_user']="$user";$_SESSION['mysql_pass']="$pass";$_SESSION['query']="$query";$_SESSION['host']="$host";
     		echo "<br> MySQL Query results: <br>";
