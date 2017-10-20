@@ -2,7 +2,7 @@
 <?php
 $user="";
 $pass="";
-$database="custom";
+$database="";
 $table="";
 
 //Dont edit below here
