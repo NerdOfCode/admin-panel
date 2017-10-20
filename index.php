@@ -52,7 +52,7 @@ if(password_verify($_POST['passwd'], $password)){
         header("Location: /options.php");
         die();
 }else if(!empty($user_name)){
-	echo "<p class=\"false\" style=\"color:red;text-align:center;\">Please re-enter creds.</p>";
+	echo "<p class=\"false\" style=\"color:red;text-align:center;\">INVALID</p>";
 }
 mysqli_close($db);
 
