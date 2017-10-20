@@ -1,6 +1,13 @@
+
 <?php
-$user="wp_user";
-$pass="skstsnbd18";
-$database="custom";
-$table="users";
+$user="";
+$pass="";
+$database="";
+$table="";
+
+//Dont edit below here
+$version=".00001 alpha";
+
 ?>
+
+
