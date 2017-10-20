@@ -31,6 +31,11 @@ if (!empty($_POST['query_box'])) {
 }else{
 	echo "<b>Nothing has been run yet.</b>";	
 }
-?>  
+?>
+<script>
+var input = document.getElementById('query_box');
+input.focus();
+input.select();
+</script>
 </body>
 </html>

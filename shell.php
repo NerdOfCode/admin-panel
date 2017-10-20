@@ -19,6 +19,13 @@ if($_SESSION['status']!="1"){
     	SHELL: &nbsp;&nbsp;&ensp;&nbsp;&nbsp;<input type="text" id="query_box" name="query_box" placeholder="Ex: whoami"></input><br><br>   
     	<button type="Submit" value="Submit">Submit</button>
     </form>
+<script>
+var input = document.getElementById('query_box');
+input.focus();
+input.select();
+</script>
+
+
 <?php
 $cwd=getcwd();
 echo "<br>Current directory: $cwd<br>";

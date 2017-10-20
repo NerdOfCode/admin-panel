@@ -30,7 +30,11 @@ if($status == "1"){
         <button type="Submit" value="Submit">Submit</button>
 
 </form>
-
+<script>
+var input = document.getElementById('mysql_get');
+input.focus();
+input.select();
+</script>
 </body>
 
 <?php
