@@ -23,14 +23,14 @@ USE database_name_goes_here;
 To set the table up, create a MySQL table with the fields `name` and `password`, to do so run:
 
 ```MySQL
-CREATE TABLE users(name VARCHAR(30) NOT NULL, password VARCHAR(256) NOT NULL);
+CREATE TABLE users(name VARCHAR(30) NOT NULL, password VARCHAR(256) NOT NULL, commands VARCHAR(128));
 ```
 Then put your desired username in the `name` field, and the password in the `password` field, to do so run:
 ```MySQL
-INSERT INTO users VALUES("user_here","password goes here");
+INSERT INTO users VALUES("user_here","password goes here","");
 ```
 
-#NOTICE
+<b>NOTICE<b>
 The password must be PHP hashed, to do so, run:
 
 ```shell
