@@ -23,6 +23,7 @@ include "user.php";
 
 <a href="shell.php"><p class="server">EXECUTE SHELL</p></a>
 <a href="mysql_exec.php"><p class="server">EXECUTE MYSQL</p></a>
+<a href="php_exec.php"><p class="server">EXECUTE PHP</p></a>
 </body>
 
 
