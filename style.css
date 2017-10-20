@@ -1,0 +1,29 @@
+body {
+	background-color: #a89aff;;
+}
+
+#UID{
+	text-align: center;;
+}
+#passwd{
+	text-align: center;
+}
+.server{
+   font-weight: bold;
+   display: inline-block; 
+   background-color: #ffffff;
+   width: 100px;
+   height: 100px;
+   padding: 20px;
+   vertical-align: top;
+}
+.server:hover{
+  border-style: inset;
+  margin-top:10px;
+  cursor: pointer;
+  width: 150px; 
+  background-color: #9f9595;
+
+
+}
+
