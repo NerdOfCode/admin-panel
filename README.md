@@ -3,7 +3,12 @@ This is a brand new admin panel that is currently in alpha stages. As of now, th
 
 ## To Set-Up, follow steps below:
 
-First create a MySQL database by running:
+First clone the repository into your web server's document root directory, then run:
+
+git clone git@github.com:NerdOfCode/admin-panel.git
+
+
+Then to set a user up, create a MySQL database by running:
 
 ```MySQL
 CREATE DATABASE database_name_goes_here;
