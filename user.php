@@ -1,6 +1,6 @@
 <?php
-$user="wp_user";
-$pass="skstsnbd18";
-$database="custom";
+$user="adminuser";
+$pass="abc123";
+$database="adminpanel";
 $table="users";
 ?>

@@ -15,7 +15,7 @@ if($_SESSION['status']!="1"){
     <a href="options.php">Home</a><hr>
 
     <form action="" name="query" id="query" method="post">
-    	PHP: &nbsp;&nbsp;&ensp;&nbsp;&nbsp;<input type="text" id="query_box" name="query_box" placeholder="Ex: whoami"></input><br><br>   
+    	PHP: &nbsp;&nbsp;&ensp;&nbsp;&nbsp;<input type="text" id="query_box" name="query_box" placeholder='echo "Hello, World!";'></input><br><br>   
     	<button type="Submit" value="Submit">Submit</button>
     </form>
 <?php
