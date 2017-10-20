@@ -9,17 +9,28 @@ First create a MySQL database by running:
 CREATE DATABASE database_name_goes_here;
 ```
 
-To set it up, create a MySQL table, with the fields `name` and `password`, to do so run:
+Then switch over to it by running:
+
+```MySQL
+use database_name_goes_here;
+```
+
+To set the table up, create a MySQL table with the fields `name` and `password`, to do so run:
 
 ```MySQL
 CREATE TABLE users(name VARCHAR(30) NOT NULL, password VARCHAR(256) NOT NULL);
 ```
-Then put your desired username in the `name` field, and the password in the `password` field.
+Then put your desired username in the `name` field, and the password in the `password` field, to do so run:
+```MySQL
+INSERT INTO users VALUES("user_here","password goes here");
+```
+
+#NOTICE
 The password must be PHP hashed, to do so, run:
 
 ```shell
 php -r 'echo password_hash("password", PASSWORD_DEFAULT);'; echo ""
 ```
-on a LAMP install, make sure to put this password back in the MySQL table...
+MAKE SURE to put this password back in the MySQL table...
 
 Finally, change the values in the <b>user.php</b> file to match your own.
