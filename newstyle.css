@@ -9,6 +9,9 @@ body {
 
 }
 
+a{
+	color: blue;	
+}
 
 .server{
    font-weight: bold;
@@ -17,7 +20,7 @@ body {
    width: 100px;
    height: 100px;
    padding: 20px;
-   vertical-align: top;
+   vertical-align: middle;
 }
 .server:hover{
   border-style: inset;
@@ -25,6 +28,7 @@ body {
   cursor: pointer;
   width: 150px; 
   background-color: #9f9595;
+  vertical-align: middle;
 }
 .footer{
 	position: absolute;
