@@ -1,0 +1,35 @@
+body {
+	background-color: #c6e2ff;
+}
+
+
+#index{
+	width: 200px;
+	margin: auto;
+
+}
+
+
+.server{
+   font-weight: bold;
+   display: inline-block; 
+   background-color: #ffffff;
+   width: 100px;
+   height: 100px;
+   padding: 20px;
+   vertical-align: top;
+}
+.server:hover{
+  border-style: inset;
+  margin-top:10px;
+  cursor: pointer;
+  width: 150px; 
+  background-color: #9f9595;
+}
+.footer{
+	position: absolute;
+	bottom:0;
+	left: 0;
+	right: 0;
+	text-align:center;
+}
