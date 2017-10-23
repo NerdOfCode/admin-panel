@@ -18,7 +18,9 @@ include "user.php";
 </head>
 <body>
 <h1 style="text-align: center;">Admin Panel</h1>
-<a href="logout.php" class="logout">Logout</a><hr>
+<div id="blueLink">
+<a href="logout.php">Logout</a><hr>
+</div>
 <p>Below you will find shortcuts to a number of settings meant to replace SSH</p>
 
 <a href="shell.php"><p class="server">EXECUTE SHELL</p></a>
