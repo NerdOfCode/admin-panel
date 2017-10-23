@@ -21,7 +21,6 @@ if($status == "1"){
 <h1 style="text-align: center;">Admin Panel</h1>
 <a href="logout.php">Logout</a>&ensp;
 <a href="options.php">Home</a><hr>
-<p>Below is version v.000001 of admin panel by NerdOfCode</p>
 <p>You can execute shell commands seperately from Mysql commands</p>
 <form action="" name="query" id="query" method="post">
         DBNAM: &nbsp;&nbsp;&nbsp;<input type="text" id="mysql_get" name="mysql_get" placeholder="ex: custom" value="<?php echo $_SESSION[udb];?>"></input><br><br>
