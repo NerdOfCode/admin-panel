@@ -9,7 +9,7 @@ body {
 
 }
 
-a{
+.logout{
 	color: blue;	
 }
 
@@ -20,7 +20,7 @@ a{
    width: 100px;
    height: 100px;
    padding: 20px;
-   vertical-align: middle;
+   verticle-align: top;
 }
 .server:hover{
   border-style: inset;
@@ -28,7 +28,6 @@ a{
   cursor: pointer;
   width: 150px; 
   background-color: #9f9595;
-  vertical-align: middle;
 }
 .footer{
 	position: absolute;
