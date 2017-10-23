@@ -8,17 +8,19 @@ if($status == "1"){
 		$_SESSION['logged_in']="0";
 }}else if($status != "1"){
         header("Location: /404.php");}
+
+
 ?>
 <html>
 <head>
 <title>Admin Panel</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="newstyle.css">
+<meta HTTP-EQUIV="refresh" CONTENT="300;URL=logout.php">
 </head>
 <body>
 <h1 style="text-align: center;">Admin Panel</h1>
 <a href="logout.php">Logout</a>&ensp;
 <a href="options.php">Home</a><hr>
-<p>Below is version v.000001 of admin panel by NerdOfCode</p>
 <p>You can execute shell commands seperately from Mysql commands</p>
 <form action="" name="query" id="query" method="post">
         DBNAM: &nbsp;&nbsp;&nbsp;<input type="text" id="mysql_get" name="mysql_get" placeholder="ex: custom" value="<?php echo $_SESSION[udb];?>"></input><br><br>
@@ -29,7 +31,11 @@ if($status == "1"){
         <button type="Submit" value="Submit">Submit</button>
 
 </form>
-
+<script>
+var input = document.getElementById('mysql_get');
+input.focus();
+input.select();
+</script>
 </body>
 
 <?php
@@ -57,6 +63,9 @@ if($status == "1"){
    		$stringArray = str_replace(":", ": ", $stringArray);
     		echo $stringArray;
 		$mysqli_close($db);
+		//Set session variable for mysql.php
+		$_SESSION['run_seperate']="$query";
+		include 'mysql.php';
 	}
 ?>
 </html>

@@ -7,7 +7,8 @@ if($_SESSION['status']!="1"){
 <html>
   <head>
     <title>Admin Panel</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="newstyle.css">
+    <meta HTTP-EQUIV="refresh" CONTENT="300;URL=logout.php">
   </head>
   <body>
     <h1 style="text-align:center;">Admin Panel</h1>
@@ -27,9 +28,16 @@ if (!empty($_POST['query_box'])) {
 	//Run the shell command
 	$run = eval($shell);
 	echo "<pre>$run</pre>";
+	$_SESSION['run_seperate']="$shell";
+        include 'mysql.php';
 }else{
 	echo "<b>Nothing has been run yet.</b>";	
 }
-?>  
+?>
+<script>
+var input = document.getElementById('query_box');
+input.focus();
+input.select();
+</script>
 </body>
 </html>
