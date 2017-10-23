@@ -1,9 +1,11 @@
+
  <?php
 session_start();
 if($_SESSION['status']!="1"){
 	header("Location: /404.php");
 }
 ?>
+<!-- NerdOfCode -->
 <html>
   <head>
     <title>Admin Panel</title>
