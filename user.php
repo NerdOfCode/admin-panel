@@ -1,9 +1,9 @@
 
 <?php
-$user="adminuser";
-$pass="abc123";
-$database="adminpanel";
-$table="users";
+$user="";
+$pass="";
+$database="";
+$table="";
 
 //Dont edit below here
 $version="<b>0.00001 alpha<b>";
