@@ -34,7 +34,7 @@ input.focus();
 input.select();
 
 </script>
-<p class="footer">By: <a href="https://github.com/NerdOfCode" target="_blank"><b>NerdOf</b>Code</a>, <a href="https://github.com/NerdOfLinux" target="_blank"><b>NerdOf</b>Linux</a> | <a href="https://github.com/NerdOfCode/admin-panel/blob/master/LICENSE">License</a></p>    
+<p class="footer">By: <a href="https://github.com/NerdOfCode" target="_blank"><b>NerdOf</b>Code</a>, <a href="https://github.com/NerdOfLinux" target="_blank"><b>NerdOf</b>Linux</a> | <a href="/LICENSE">License</a></p>    
   </body>
   
 <?php
