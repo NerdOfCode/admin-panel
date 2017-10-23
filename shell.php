@@ -9,7 +9,7 @@ if($_SESSION['status']!="1"){
 <html>
   <head>
     <title>Admin Panel</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="newstyle.css">
     <meta HTTP-EQUIV="refresh" CONTENT="300;URL=logout.php">
   </head>
   <body>

@@ -11,7 +11,7 @@ if($_SESSION['status']=="1"){
   <head>
     <title>Admin Panel</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="newstyle.css">
   </head>
   <body>
     <h1 style="text-align:center;">Admin Panel</h1><hr>
