@@ -12,6 +12,6 @@
 
   //Dont edit below here
   
-  $version="<b>0.00001 alpha<b>";
+  $version="<b>0.00002 alpha<b>";
 
   ?>
