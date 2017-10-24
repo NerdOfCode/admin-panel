@@ -9,6 +9,13 @@ body {
 
 }
 
+#blueLink a{
+	color: blue;	
+}
+
+#blueLink a:hover{
+	color: red;	
+}
 
 .server{
    font-weight: bold;
