@@ -1,9 +1,17 @@
 <?php
-$user="";
-$pass="";
-$database="";
-$table="";
+  
+  //Change the values below this line to match your MySQL database creds
+  
+  $user="";
 
-//Dont edit below here
-$version="<b>0.00001 alpha<b>";
-?>
+  $pass="";
+
+  $database="";
+  
+  $table="";
+
+  //Dont edit below here
+  
+  $version="<b>0.00001 alpha<b>";
+
+  ?>
