@@ -16,8 +16,8 @@ if($_SESSION['status']=="1"){
   <body>
     <h1 style="text-align:center;">Admin Panel</h1><hr>
     <form name="index" id="index" action="" method="post">
-      Username:&ensp;<input type="text" name="UID" id="UID" required><br><br>
-      Password:&ensp;<input type="password" name="passwd" id="passwd" required><br><br>
+      <input type="text" name="UID" id="UID" required><br><br>
+      <input type="password" name="passwd" id="passwd" required><br><br>
       <input type="submit" value="Submit" onClick=""">
     </form>
     
