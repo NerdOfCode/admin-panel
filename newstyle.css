@@ -13,6 +13,10 @@ body {
 	color: blue;	
 }
 
+#blueLink a:hover{
+	color: red;	
+}
+
 .server{
    font-weight: bold;
    display: inline-block; 
