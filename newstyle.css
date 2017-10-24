@@ -9,7 +9,7 @@ body {
 
 }
 
-.logout{
+#blueLink a{
 	color: blue;	
 }
 
@@ -20,7 +20,7 @@ body {
    width: 100px;
    height: 100px;
    padding: 20px;
-   verticle-align: top;
+   vertical-align: top;
 }
 .server:hover{
   border-style: inset;
