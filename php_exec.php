@@ -12,9 +12,10 @@ if($_SESSION['status']!="1"){
   </head>
   <body>
     <h1 style="text-align:center;">Admin Panel</h1>
+    <div id="blueLink">
     <a href="logout.php">Logout</a>&ensp;
     <a href="options.php">Home</a><hr>
-
+    </div>
     <form action="" name="query" id="query" method="post">
     	PHP: &nbsp;&nbsp;&ensp;&nbsp;&nbsp;<input type="text" id="query_box" name="query_box" placeholder='echo "Hello, World!";'></input><br><br>   
     	<button type="Submit" value="Submit">Submit</button>
