@@ -10,6 +10,10 @@ First clone the repository into your web server's document root directory, then 
 
 Then to set a user up, create a MySQL database by running:
 
+```shell
+sudo mysql
+```
+
 ```MySQL
 CREATE DATABASE database_name_goes_here;
 ```
