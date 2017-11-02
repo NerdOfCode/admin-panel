@@ -16,8 +16,8 @@ if($_SESSION['status']=="1"){
   <body>
     <h1 style="text-align:center;">Admin Panel</h1><hr>
     <form name="index" id="index" action="" method="post">
-      <input type="text" name="UID" id="UID" required><br><br>
-      <input type="password" name="passwd" id="passwd" required><br><br>
+      Username:&ensp;<input type="text" name="UID" id="UID" required><br><br>
+      Password:&ensp;<input type="password" name="passwd" id="passwd" required><br><br>
       <input type="submit" value="Submit" onClick=""">
     </form>
     
@@ -34,7 +34,7 @@ input.focus();
 input.select();
 
 </script>
-<p class="footer">By: <a href="https://github.com/NerdOfCode" target="_blank"><b>NerdOf</b>Code</a>, <a href="https://github.com/NerdOfLinux" target="_blank"><b>NerdOf</b>Linux</a> | <a href="/LICENSE">License</a></p>    
+<p class="footer"> <a href="/contributors.html" target="_blank">Contributors</a> | <a href="/LICENSE" target="_blank">License</a> | <a href="mailto:team@nerdofcode.com?subject=admin-panel" target="_blank">Contact</a></p>    
   </body>
   
 <?php
