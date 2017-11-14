@@ -2,13 +2,13 @@
   
   //Change the values below this line to match your MySQL database creds
   
-  $user="";
+  $user="adminuser";
 
-  $pass="";
+  $pass="abc123";
 
-  $database="";
+  $database="adminpanel";
   
-  $table="";
+  $table="users";
 
   //Dont edit below here
   
