@@ -18,8 +18,8 @@ include "/user.php";
 <body>
 <h1 style="text-align: center;">Installers</h1>
 <div id="blueLink">
-<a href="/options.php">Home</a>
-<a href="/logout.php">Logout</a><hr>
+<a href="/logout.php">Logout</a>
+<a href="/options.php">Home</a><hr>
 </div>
 <p>Here are the installers you have available: </p>
 
@@ -29,13 +29,11 @@ $files = scandir('.');
 //usort($files, 'strnatcasecmp');
 sort($files); // this does the sorting
 foreach($files as $file){
-   if ($file != "." and $file !=".." and $file !=".index.php.swp" and $file !="index.php"){
-     $file = str_replace(".php", "", $file);
-     echo'<a href="$file"><p class="server">'.$file.'</p></a> ';
+   if ($file != "." and $file !=".." and $file !="index.php" and strpos($file,"swp") == false){
+     echo'<a href="'.$file.'"><p class="server">'.str_replace(".php","",$file)."</p></a> ";
    }
 }?>
 
-<p class="footer">Version: <?php echo $version; ?></p>
 </body>
 
 
