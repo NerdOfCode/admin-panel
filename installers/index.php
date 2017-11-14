@@ -30,6 +30,7 @@ $files = scandir('.');
 sort($files); // this does the sorting
 foreach($files as $file){
    if ($file != "." and $file !=".." and $file !=".index.php.swp" and $file !="index.php"){
+     $file = str_replace(".php", "", $file);
      echo'<a href="$file"><p class="server">'.$file.'</p></a> ';
    }
 }?>
