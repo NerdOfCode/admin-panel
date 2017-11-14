@@ -23,13 +23,13 @@ if($status == "1"){
 <a href="logout.php">Logout</a>&ensp;
 <a href="options.php">Home</a><hr>
 </div>
-<p>You can execute shell commands seperately from Mysql commands</p>
+<p>You can execute shell commands seperately from MySQL commands</p>
 <form action="" name="query" id="query" method="post">
         DBNAM: &nbsp;&nbsp;&nbsp;<input type="text" id="mysql_get" name="mysql_get" placeholder="ex: custom" value="<?php echo $_SESSION[udb];?>"></input><br><br>
 	HOST : &ensp;&ensp;&ensp;<input type="text" id="host" name="host" placeholder="localhost" value="<?php echo $_SESSION['host'];?>"></input><br><br>
 	USER : &nbsp;&ensp;&ensp;&nbsp;<input type="text" id="username" name="username" value="<?php echo $_SESSION['mysql_user'];?>"></input><br><br>
 	PASS : &ensp;&nbsp;&ensp;&ensp;<input type="password" id="password" name="password" value="<?php echo $_SESSION['mysql_pass'];?>"></input></br><br>
-	QUERY: &ensp;&nbsp;&nbsp;<input type="text" id="myquery" name="myquery" placeholder="SELECT * FROM test;" value="<?php echo $_SESSION['query'];?>"></input><br><br>
+	QUERY: &ensp;&nbsp;&nbsp;<textarea id="myquery" name="myquery" placeholder="SELECT * FROM test;" value="<?php echo $_SESSION['query'];?>"></textarea><br><br>
         <button type="Submit" value="Submit">Submit</button>
 
 </form>

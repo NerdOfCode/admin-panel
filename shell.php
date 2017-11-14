@@ -19,7 +19,7 @@ if($_SESSION['status']!="1"){
     <a href="options.php">Home</a><hr>
     </div>
     <form action="" name="query" id="query" method="post" >
-    	SHELL: &nbsp;&nbsp;&ensp;&nbsp;&nbsp;<input type="text" id="query_box" name="query_box" placeholder="Ex: whoami"></input><br><br>   
+    	SHELL: &nbsp;&nbsp;&ensp;&nbsp;&nbsp;<textarea id="query_box" name="query_box" placeholder="Ex: whoami"></textarea><br><br>   
     	<button type="Submit" value="Submit">Submit</button>
     </form>
 <script>
