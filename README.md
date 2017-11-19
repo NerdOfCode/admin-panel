@@ -45,4 +45,4 @@ MAKE SURE to put this password back in the MySQL table...
 Finally, change the values in the <b>user.php</b> file to match your own.
 
 # How to help
-If you want to create installers for this amazing admin panel, simply create a repository or GitHub Gist, and send the URL to <a href="mailto:nerdoflinux@gateblogs.com"> nerdoflinux@gateblogs.com </a>.
+If you want to create installers for this amazing admin panel, simply create a repository or GitHub Gist, and send the URL to <a href="mailto:team@nerdofcode.com"> team@nerdofcode.com </a>.
