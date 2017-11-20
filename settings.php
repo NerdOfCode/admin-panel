@@ -8,7 +8,6 @@ if($status == "1"){
 		$_SESSION['logged_in']="0";
 }}else if($status != "1"){
         header("Location: /404.php");}
-include "user.php";
 ?>
 <html>
 <head>
@@ -19,18 +18,11 @@ include "user.php";
 <body>
 <h1 style="text-align: center;">Admin Panel</h1>
 <div id="blueLink">
-<a href="settings.php">Settings</a>
-&ensp;<a href="logout.php">Logout</a><hr>
+<a href="logout.php">Logout</a>&ensp;
+<a href="options.php">Home</a><hr>
 </div>
-<p>Below you will find shortcuts to a number of settings meant to replace SSH</p>
+<p>You can change simple settings about this admin-panel below:</p><br>
+<a href="themes.php"><p class="server">THEMES</p></a>
 
-<a href="shell.php"><p class="server">EXECUTE SHELL</p></a>
-<a href="mysql_exec.php"><p class="server">EXECUTE MYSQL</p></a>
-<a href="php_exec.php"><p class="server">EXECUTE PHP</p></a>
-<a href="installers/index.php"> <p class="server"> INSTALLERS </p></a> <br><br>
-
-<p class="footer">Version: <?php echo $version; ?></p>
 </body>
-
-
 </html>
