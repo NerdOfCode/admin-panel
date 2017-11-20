@@ -13,7 +13,7 @@ if($status == "1"){
 <head>
 <title>Admin Panel</title>
 <link rel="stylesheet" type="text/css" href="../newstyle.css">
-<meta HTTP-EQUIV="refresh" CONTENT="300;URL=logout.php">
+<meta HTTP-EQUIV="refresh" CONTENT="300;URL=../logout.php">
 </head>
 <body>
 <h1 style="text-align: center;">Admin Panel</h1>

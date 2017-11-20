@@ -13,7 +13,7 @@ if($status == "1"){
 <head>
 <title>Admin Panel</title>
 <link rel="stylesheet" type="text/css" href="../newstyle.css">
-<meta HTTP-EQUIV="refresh" CONTENT="300;URL=logout.php">
+<meta HTTP-EQUIV="refresh" CONTENT="300;URL=../logout.php">
 </head>
 <body>
 <h1 style="text-align: center;">Admin Panel</h1>
@@ -22,7 +22,7 @@ if($status == "1"){
 <a href="../options.php">Home</a><hr>
 </div>
 <p>You can change simple settings about this admin-panel below:</p><br>
-<a href="themes.php"><p class="server">THEMES</p></a>
-
+<a href="themes.php"><p class="server">Themes</p></a>
+<a href="phpandinfo.php"><p class="server">Php Info</p></a>
 </body>
 </html>
