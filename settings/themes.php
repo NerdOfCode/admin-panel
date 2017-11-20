@@ -12,14 +12,14 @@ if($status == "1"){
 <html>
 <head>
 <title>Admin Panel</title>
-<link rel="stylesheet" type="text/css" href="newstyle.css">
+<link rel="stylesheet" type="text/css" href="../newstyle.css">
 <meta HTTP-EQUIV="refresh" CONTENT="300;URL=logout.php">
 </head>
 <body>
 <h1 style="text-align: center;">Admin Panel</h1>
 <div id="blueLink">
-<a href="logout.php">Logout</a>&ensp;
-<a href="options.php">Home</a><hr>
+<a href="../logout.php">Logout</a>&ensp;
+<a href="../options.php">Home</a><hr>
 </div>
 <p>The themes page is currently a work and progress...</p>
 </body>

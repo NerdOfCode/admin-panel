@@ -19,7 +19,7 @@ include "user.php";
 <body>
 <h1 style="text-align: center;">Admin Panel</h1>
 <div id="blueLink">
-<a href="settings.php">Settings</a>
+<a href="/settings/settings.php">Settings</a>
 &ensp;<a href="logout.php">Logout</a><hr>
 </div>
 <p>Below you will find shortcuts to a number of settings meant to replace SSH</p>
