@@ -1,6 +1,9 @@
 # admin-panel
 This is a brand new admin panel that is currently in alpha stages. As of now, the panel can run shell commands, basic MySQL queries, and simple PHP commands. This panel has a very simple UI, and the passwords in the database are hashed.
 
+# Not maintained anymore
+This repository is no longer actively maintained. If you want a simple control panel, please check out [NerdOfLinux's control panel](https://github.com/NerdOfLinux/control-panel).
+
 ## To Set-Up, follow steps below:
 
 First clone the repository into your web server's document root directory, then run:
